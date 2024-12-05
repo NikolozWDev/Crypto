@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(24, 21, 49);
+}
+
+
+.loading-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    animation-name: loadingdiv;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    animation-delay: 1s;
+    pointer-events: none;
+}
+@keyframes loadingdiv {
+    100% {
+        opacity: 0;
+    }
+}
+
+.loading {
+    width: 20px;
+    height: 70px;
+    background-color: orange;
+    position: absolute;
+    animation-name: loading1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes loading1 {
+    50% {
+        height: 90px;
+    }
+    100% {
+        height: 70px;
+    }
+}
+.for19 {
+    transform: translateX(30px);
+    animation-name: loading2;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes loading2 {
+    50% {
+        height: 100px;
+    }
+    100% {
+        height: 70px;
+    }
+}
+.for20 {
+    transform: translate(-30px);
+    animation-name: loading3;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes loading3 {
+    50% {
+        height: 110px;
+    }
+    100% {
+        height: 70px;
+    }
+}
+.primary-loading {
+    opacity: 0;
+    animation-name: primaryloading;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes primaryloading {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+.primary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+button {
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.left {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.right {
+    width: 75%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgb(231, 231, 231);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.right-text1 {
+    color: black;
+    font-size: 25px;
+}
+.right-text2 {
+    color: rgb(102, 58, 160);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(231, 231, 231);
+    width: 90%;
+    font-size: 13px;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button1:hover {
+    box-shadow: 2px 2px 2px 2px rgb(74, 74, 255);
+}
+.button1:active {
+    background-color: rgb(207, 207, 207);
+}
+
+.right-div1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.right-div2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.right-div3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.line {
+    width: 30%;
+    height: 1px;
+    background-color: rgb(197, 197, 197);
+}
+.right-text3 {
+    font-size: 12px;
+}
+
+.right-div4 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-div {
+    position: relative;
+    width: 90%;
+}
+
+.input1 {
+    width: 100%;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    border-radius: 4px;
+    padding: 25px 0px 10px 55px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.right-text4 {
+    font-size: 9px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    transform: translateX(55px) translateY(10px);
+    z-index: 2;
+}
+.right-img2 {
+    position: absolute;
+    z-index: 2;
+    transform: translateX(10px) translateY(20px);
+}
+.right-img3 {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(20px) translateX(200px);
+    display: none;
+}
+.input2 {
+    background-color: rgb(230, 230, 230);
+    color: rgb(230, 230, 230);;
+}
+
+.right-div5 {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.right-text5 {
+    font-size: 13px;
+}
+
+.right-div6 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-text6 {
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.right-text6:hover {
+    color: gray;
+}
+.right-text6:active {
+    color: red;
+}
+
+.right-div7 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button2 {
+    background-color: rgb(93, 47, 180);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.button2:hover {
+    opacity: 0.8;
+}
+.button2:active {
+    opacity: 0.7;
+}
+
+
+@media (min-width: 800px) {
+    .left {
+        width: 42%;
+    }
+    .right {
+        width: 42%;
+    }
+    .primary {
+        gap: 8%;
+    }
+    .right-img3 {
+        display: block;
+        transform: translateY(20px) translateX(260px);
+    }
+}
+@media (min-width: 900px) {
+    .right-img3 {
+        display: block;
+        transform: translateY(20px) translateX(310px);
+    }
+}
+@media (min-width: 1000px) {
+    .right-img3 {
+        display: block;
+        transform: translateY(20px) translateX(340px);
+    }
+}
+@media (min-width: 1100px) {
+    .right-img3 {
+        display: block;
+        transform: translateY(20px) translateX(380px);
+    }
+}
+@media (min-width: 1150px) {
+    .right-img3 {
+        display: block;
+        transform: translateY(20px) translateX(400px);
+    }
+    .right {
+        width: 488px;
+    }
+}
+@media (min-width: 1300px) {
+    .left {
+        width: 546px;
+    }
+}
